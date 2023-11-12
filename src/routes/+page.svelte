@@ -2,11 +2,12 @@
   import "@shoelace-style/shoelace/dist/themes/light.css";
 
   import { browser } from "$app/environment";
-  // import "@shoelace-style/shoelace/dist/components/input/input.js";
+
+  // The app breaks when this line is enabled
   // import "@shoelace-style/shoelace/dist/components/button/button.js";
 
   if (browser) {
-    // import("@shoelace-style/shoelace/dist/components/input/input.js")
+    // The app works when this line is enabled
     import("@shoelace-style/shoelace/dist/components/button/button.js");
   }
 </script>
